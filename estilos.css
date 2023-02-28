@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  font-weight: 100;
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #b5b5b5;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.nav_lnk {
+  float: left;
+  border-right: 1px solid #b5b5b5;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: indigo;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(128, 72, 168);
+}
+
+.divGeneral {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#nombre {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 400%;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+#profesion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+a.href {
+  margin-top: 15%;
+}
+
+.bg-image {
+  margin-top: 0px;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto {
+  padding: 10%;
+}
+
+.img1 { background-image: url("amanecer.jpg"); }
+.img2 { background-image: url("espigas.jpg"); }
+.img3 { background-image: url("garza.jpg"); }
+.img4 { background-image: url("cerros.jpg"); }
+.img5 { background-image: url("playa.jpg"); }
+
+.foto {
+  margin-top: 5%;
+  width: 70%;
+}
+
+.correo {
+  color: #000;
+}
+
+.contacto {
+  margin: 12px 5px 0px 0px;
+}
+
+.contacto:hover {
+  width: 36px;
+  height: 36px;
+}
+
+div.texto.infopersonal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+div.texto.infopersonal p {
+  padding-top: 12px;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+}
+
+
+div.texto.experiencia h3 {
+  margin-top: 15px;
+  text-align: left;
+  font-size: large;
+  font-style: italic;
+}
+
+div.texto.experiencia li {
+  margin-top: 12px;
+  text-align: justify;
+  font-size: medium;
+  font-style: normal;
+}
+
+div.texto.habilidades li {
+  list-style: none;
+  margin-top: 14px;
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer h4 {
+  color: rgba(0, 0, 0, 0.562);
+  font-size: large;
+  text-align: center;
+}
+
+/* Este sector debe ir al final para modificar lo anterior */
+
+@media screen and (max-width: 600px) {
+  .nav_lnk { float: none; }
+  .divGeneral {margin-top: 210px;}
+}
