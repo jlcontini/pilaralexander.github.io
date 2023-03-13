@@ -1,155 +1,504 @@
+/* Importar fuente: Playfair Display - Designed by Claus Eggers Sørensen */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display&display=swap');
+
 * {
+  font-family: "Playfair Display";
   margin: 0px;
   padding: 0px;
 }
 
-#nav_bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: small;
-  font-weight: 100;
-  list-style-type: none;
-  margin: 0;
-  border: 1px solid #b5b5b5;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000;
+html {
+  scroll-behavior: smooth;
 }
 
-.nav_lnk {
-  float: left;
-  border-right: 1px solid #b5b5b5;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: indigo;
-}
-
-li a:hover:not(.active) {
-  background-color: rgb(128, 72, 168);
-}
-
-.divGeneral {
-  margin: 0px;
-  padding: 0px;
-}
-
-
-#nombre {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 400%;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 3%;
-}
-
-#profesion {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
-  font-weight: normal;
-  font-style: normal;
-  text-align: left;
-  margin-top: 1%;
-  padding: 1%;
-}
-
-a.href {
-  margin-top: 15%;
-}
-
-.bg-image {
-  margin-top: 0px;
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Sección Inicio */
+.inicio {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)),
+  url("img/fondo-1.jpg");
   background-size: cover;
+  background-position: center center;
+  color: #fff;
 }
 
-.texto {
-  padding: 10%;
-}
-
-.img1 { background-image: url("amanecer.jpg"); }
-.img2 { background-image: url("espigas.jpg"); }
-.img3 { background-image: url("garza.jpg"); }
-.img4 { background-image: url("cerros.jpg"); }
-.img5 { background-image: url("playa.jpg"); }
-
-.foto {
-  margin-top: 5%;
-  width: 70%;
-}
-
-.correo {
-  color: #000;
-}
-
-.contacto {
-  margin: 12px 5px 0px 0px;
-}
-
-.contacto:hover {
-  width: 36px;
-  height: 36px;
-}
-
-div.texto.infopersonal {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-}
-
-div.texto.infopersonal p {
-  padding-top: 12px;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-}
-
-
-div.texto.experiencia h3 {
-  margin-top: 15px;
-  text-align: left;
-  font-size: large;
-  font-style: italic;
-}
-
-div.texto.experiencia li {
-  margin-top: 12px;
-  text-align: justify;
-  font-size: medium;
-  font-style: normal;
-}
-
-div.texto.habilidades li {
-  list-style: none;
-  margin-top: 14px;
+.inicio .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
-  font-size: large;
-  font-style: italic;
+  padding: 0 10px;
+}
+
+.inicio .contenido-seccion header {
+  padding: 30px;
+}
+
+/* Menu lateral: nav */
+.inicio .contenido-seccion header nav {
+  position: fixed;
+  margin-left: 60px;
+  background: none;
+  background-color: #7164d3;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 99;
+  display: none;
+}
+
+.inicio .contenido-seccion header nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 12px;
   font-weight: bold;
 }
 
-footer h4 {
-  color: rgba(0, 0, 0, 0.562);
-  font-size: large;
+/* Logo */
+.inicio .contenido-seccion header .logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family:'Trebuchet MS';
+  font-style: italic;
+  text-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion header .logo .color {
+  color: #7164d3;
+  font-family:'Trebuchet MS';
+  font-size: 3rem;
+}
+
+.inicio .contenido-seccion header .nav-bar {
+  position: fixed;
+  background-color: #7164d3;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover {
+  box-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion .info {
+  padding-bottom: 130px;
+}
+
+.inicio .contenido-seccion .info h1 {
+  font-size: 3rem;
+  letter-spacing: 7px;
+}
+
+.inicio .contenido-seccion .info h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -5px;
+  letter-spacing: 3px;
+}
+
+.inicio .contenido-seccion .info .redes {
+  margin: 20px 0;
+}
+
+.inicio .contenido-seccion .info .redes a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #7164d3;
+  border: 2px solid #7164d3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s;
+}
+
+.inicio .contenido-seccion .info .redes a:hover {
+  color: #fff;
+  background-color: #7164d3;
+  box-shadow: 0 0 15px #fff;
+  border: 2px solid #fff;
+}
+
+.inicio .contenido-seccion .foto {
+  position: relative; 
+}
+
+.inicio .contenido-seccion .foto img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 3px solid #7164d3;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+
+/* Estilos generales de las secciones */
+.titulo-seccion {
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+}
+
+/* Seccion Info Personal */
+.infopersonal {
+  background-color: #eee;
+  padding: 140px 0 100px 0;
   text-align: center;
 }
 
-/* Este sector debe ir al final para modificar lo anterior */
+.infopersonal .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
 
-@media screen and (max-width: 600px) {
-  .nav_lnk { float: none; }
-  .divGeneral {margin-top: 210px;}
+.infopersonal .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.infopersonal .contenido-seccion .sobremi {
+  color: #7164d3;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.infopersonal .contenido-seccion p {
+  max-width: 700px;
+  margin: auto;
+  color: #7871b1;
+}
+
+.infopersonal .contenido-seccion .fila {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.infopersonal .contenido-seccion .fila .col {
+  width: 30%;
+}
+
+.infopersonal .contenido-seccion .fila .col i {
+  color: #7164d3;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #7164d3;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px 10px 0;
+}
+
+.infopersonal .contenido-seccion .fila .col span {
+  display: inline-block;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* Seccion Habilidades */
+.habilidades {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url("img/fondo-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #fff;
+}
+
+.habilidades .contenido-seccion {
+  max-width: 1000px;
+  margin: 0 10%;
+  padding: 0 10px;
+}
+
+.habilidades .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.habilidades .contenido-seccion .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.habilidades .contenido-seccion .fila .col {
+  width: 40%;
+  text-align: right;
+}
+
+.habilidades .contenido-seccion .fila .col .cont-barra {
+  display: flex;
+  align-items: center;
+}
+
+.habilidades .contenido-seccion .barra {
+  display: flex;
+  border: 2px solid #7164d3;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* Cuadrado en barra de progreso en habilidades */
+.habilidades .contenido-seccion .barra .e {
+  background-color: #363036;
+  width: 20px;
+  height: 30px;
+  margin-right: 2px;
+}
+
+/* Seccion Experiencia */
+.experiencia {
+  background-color: #eee;
+  padding: 140px 0 100px 0;
+  text-align: center;  
+}
+
+.experiencia .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.experiencia .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.experiencia .contenido-seccion .info {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+}
+
+.experiencia .contenido-seccion .info .col {
+  width: 42%;
+}
+
+.experiencia .contenido-seccion .info .col .titulo {
+  display: inline-block;
+  color: #7164d3;
+  font-weight: bold;
+  border: 2px solid #7164d3;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.experiencia .contenido-seccion .info .col table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.experiencia .contenido-seccion .info .col table .datos {
+  width: 40%;
+  border-bottom: 1px solid #7871b1;
+}
+
+.experiencia .contenido-seccion .info .col table h4 {
+  margin-top: 10px;
+}
+
+.experiencia .contenido-seccion .info .col table h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.experiencia .contenido-seccion .info .col table p {
+  font-size: 14px;
+}
+
+.experiencia .contenido-seccion .info .col table .promedio {
+  display: block;
+  color: #7164d3;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.experiencia .contenido-seccion .info .col table .descripcion {
+  border-left: 1px solid #7871b1;
+  padding-left: 15px;
+}
+
+/* Seccion Contacto */
+.contacto {
+  background-color: #151515;
+  padding: 140px 0 100px 0;
+  color:#eee;
+  text-align: center;
+}
+
+.contacto .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.contacto .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.contacto .contenido-seccion .fila {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.contacto .contenido-seccion .fila .col {
+  margin-top: 50px;
+}
+
+.contacto .contenido-seccion .fila .col i {
+  margin-right: 10px;
+}
+.contacto .contenido-seccion .fila .col h2 {
+  color: #7164d3;
+}
+
+.contacto .contenido-seccion h4 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #7164d3;
+}
+
+.contacto .contenido-seccion .formulario .fila {
+  display: flex;
+}
+
+.contacto .contenido-seccion .formulario .fila .col {
+  width: 60%;
+  padding: 10px;
+  position: relative;
+
+}
+
+.contacto .contenido-seccion .formulario .fila .col input, textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #eee;
+  color: #000;
+  font-size: 18px;
+}
+
+.contacto .contenido-seccion .formulario .fila .col #enviar {
+  cursor: pointer;
+  background-color: #7164d3;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: center;
+  z-index: 10;
+}
+
+
+.contacto .contenido-seccion .formulario .fila .col #enviar:hover {
+  color: #fff;
+  background-color: #7164d3;
+  box-shadow: 0 0 15px #fff;
+  border: 2px solid #fff;
+}
+
+.footer .contenido-seccion {
+  margin-top: 30px;
+  justify-content: center;
+}
+.footer .contenido-seccion .redes {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer .contenido-seccion .redes a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #7164d3;
+  border: 2px solid #7164d3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  transition: .3s;
+}
+
+.footer .contenido-seccion .redes a:hover {
+  color: #fff;
+  background-color: #7164d3;
+  box-shadow: 0 0 15px #fff;
+  border: 2px solid #fff;
+}
+
+/* Seccion Responsive 
+Este sector debe ir al final para modificar lo anterior */
+
+@media screen and (max-width: 800px) {
+  .habilidades .contenido-seccion .fila {
+    display: block;
+  }
+
+  .habilidades .contenido-seccion .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .habilidades .contenido-seccion .fila .col .cont-barra {
+    justify-content: center;
+  }
+
+  .infopersonal .contenido-seccion .fila {
+    display: block;
+  }
+
+  .infopersonal .contenido-seccion .fila .col {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .experiencia .contenido-seccion .info {
+    display: block;
+  }
+
+  .experiencia .contenido-seccion .info .col {
+    width: 90%;
+    margin: auto;
+  }
+
+  .experiencia .contenido-seccion .info .col .titulo {
+    display: block;
+    text-align: center;
+  }
+
+  .experiencia .contenido-seccion .info .col table {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .contacto .contenido-seccion .fila {
+    display: block;
+  }
+
+  .contacto .contenido-seccion .fila .col {
+    margin-top: 20px;
+  }
 }

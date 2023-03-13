@@ -3,125 +3,358 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae Pilar María Gonzalez</title>
   <link rel="stylesheet" type="text/css" href="estilos.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Curriculum Vitae Pilar Alexander</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
+  <!-- Sección Inicio -->
+  <section class="inicio" id="inicio">
+    <div class="contenido-seccion">
+      <header>
+        <div class="nav-bar" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav" class="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#infopersonal">Info personal</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="logo">
+          PM<span class="color">A</span>
+        </div>
+      </header>
+      <div class="info">
+        <h1>PILAR MARÍA ALEXANDER</h1>
+        <h2>DESARROLLO WEB, DISEÑO, CAPACITACIÓN</h2>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="foto">
+        <img src="img/foto-pma.png" alt="Foto profesional de Pilar María Alexander">
+      </div>
 
-<!--Barra de navegación-->
-<ul id="nav_bar">
-  <li class="nav_lnk"><a class="" href="#home">Home</a> </li>
-  <li class="nav_lnk"><a class="" href="#infopersonal">Info Personal</a> </li>
-  <li class="nav_lnk"><a class="" href="#experiencia">Experiencia</a> </li>
-  <li class="nav_lnk"><a class="" href="#habilidades">Habilidades</a> </li>
-  <li class="nav_lnk"><a class="" href="#contacto">Contacto</a> </li>
-</ul>
+    </div>
+  </section>
 
-<!--
-  Corregir los ANCHOR LINKS
-  los enlaces no se ven en el lugar que se debe,
-  la pagina se muestra por debajo del menu fijo,
-  sobre todo es peor en pantallas de max 600px
--->
-
-<!--Texto de contenido de la pagina-->
-
-<div class="divGeneral">
-
-  <a class="href" id="home"></a>
-  <div class="bg-image img1">
-    <div class="texto">
-      <h1 id="nombre">Pilar María Alexander</h1>
-      <h2 id="profesion">Responsable de Capacitación</h2>
-      <h2 id="profesion">Desarrollo Web Front End</h2>
-      <h2 id="profesion">Diseño Web</h2>
-      <div>
-        <img class="foto" src="mujer.png" alt="Imagen de Pilar María Gonzalez">
+  <!-- Seccion Info Personal -->
+  <section class="infopersonal" id="infopersonal">
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Info Personal</h2>
+      <h3>Sobre mi</h3>
+      <p class="sobremi">Soy una apasionada del Desarrollo y Diseño Web. 
+        <br> Me encanta transmitir mis conocimientos.</p>
+      <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lobortis ipsum. Vestibulum congue, risus ut rhoncus eleifend, lorem mi ultrices tortor, eu sollicitudin lorem urna eget quam.</p>
+      
+      <div class="fila">
+        <div class="col">
+          <i class="fa-solid fa-user"></i>
+          <span class="titulo-detalle">Perfil</span>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ipsa cumque necessitatibus deserunt iusto dolor pariatur alias soluta debitis aliquam quasi a, vero explicabo labore molestiae, perspiciatis totam illo quibusdam?</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-location-pin"></i>
+          <span class="titulo-detalle">Ubicación</span>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ipsa cumque necessitatibus deserunt iusto dolor pariatur alias soluta debitis aliquam quasi a, vero explicabo labore molestiae, perspiciatis totam illo quibusdam?</p>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-flag"></i>
+          <span class="titulo-detalle">Intereses</span>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ipsa cumque necessitatibus deserunt iusto dolor pariatur alias soluta debitis aliquam quasi a, vero explicabo labore molestiae, perspiciatis totam illo quibusdam?</p>
+        </div>
+        
       </div>
     </div>
-  </div>
+  </section>
 
-  <a class="href" id="infopersonal"></a>
-  <div class="bg-image img2">
-    <div class="texto infopersonal">
-      <h1>Info personal</h1>
-      <p>Pilar María Alexander</p>
-      <p>01/07/1991</p>
-      <p>Corrientes 3300, Bella Vista, CP: 1661, Buenos Aires, Argentina</p>
-      <p>(+54) 11 6200-1900</p>
-      <p><a class="correo" href="mailto:pilar.maria.alexander@example.com">pilar.maria.alexander@example.com</a></p>
-    </div>
-  </div>
-  
-  <a id="experiencia"></a>
-  <div class="bg-image img3">
-    <div class="texto experiencia">
-      <h1>Experiencia</h1>
-      <ul>
-        <h3>LOREM IPSUM</h3>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque fringilla nibh a iaculis. Aliquam ac dui non justo aliquam efficitur id in leo. Fusce.</li>
-        <h3>DOLOR SIT</h3>
-        <li>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</li>
-        <h3>AMET</h3>
-        <li>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur consectetur Lorem ipsum dolor</li>
-      </ul>
-    </div>
-  </div>
-
-  <a id="habilidades"></a>
-  <div class="bg-image img4">
-    <div class="texto habilidades">
-      <h1>Habilidades</h1>
-      <ul>
-        <li>Trabajo en equipo</li>
-        <li>Proactividad</li>
-        <li>Adaptabilidad</li>
-        <li>Comunicación</li>
-        <li>Capacidad de escucha</li>
-        <li>Motivación</li>
-        <li>Pensamiento crítico</li>
-      </ul>
-
-    </div>
-  </div>
-
-  <a id="contacto"></a>
-  <div class="bg-image img5">
-    <div class="texto">
-      <h1>Contacto</h1>
-
-      <table>
-        <td width="40%">
-        <p>
-          <a class="contacto" href="mailto:pilar.maria.alexander@example.com"><img class="contacto" src="correo.png" alt="Icono de correo electrónico" width="32px" height="32px"></a>
-          <a class="contacto" href="https://www.linkedin.com/in/pilar.maria.alexander%example/"><img class="contacto" src="linkedin.png" alt="Icono de LinkedIn" width="32px" height="32px"></a>
-          <a class="contacto" href="https://twitter.com/PilarMariaAlexanderExample"><img class="contacto" src="twitter.png" alt="Icono de Twitter" width="32px" height="32px"></a>
-        </p>
-      </td>
-
-      <td width="60%">
-        <div class="texto" id="formulario">
-      
-          <form action="" method="get">
-            Nombre: <p> <input name="input_nombre" type="text"/> <br /></p>
-            E-mail: <p> </p><input name="email" type="text"/> <br /></p>
-            Asunto: <p> </p><input name="asunto" type="text"/> <br /></p>
-            Mensaje: <p> <textarea cols="20" name="comments" rows="12">Escriba aqui su mensaje</textarea></p>
-            <input type="submit" value="Enviar" />
-          </form>
+  <!-- Seccion Habilidades -->
+  <section class="habilidades" id="habilidades">
+      <div class="contenido-seccion">
+        <h2 class="titulo-seccion">Habilidades</h2>
+        <h3>Mis capacidades profesionales</h3>
+        
+        <div class="fila">
+          <div class="col">
+            <span>HTML</span>
+            <div class="cont-barra">
+              <div class="barra" id="html">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->              
+              </div>
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>CSS</span>
+            <div class="cont-barra">
+              <div class="barra" id="css">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>75%</span>
+            </div>
+          </div>          
         </div>
-      </td>
 
-    </table>
-  </div>
- 
+        <div class="fila">
+          <div class="col">
+            <span>JAVASCRIPT</span>
+            <div class="cont-barra">
+              <div class="barra" id="javascript">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>WORDPRESS</span>
+            <div class="cont-barra">
+              <div class="barra" id="wordpress">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>85%</span>
+            </div>
+          </div>          
+        </div>
+
+        <div class="fila">
+          <div class="col">
+            <span>PAINT 3D</span>
+            <div class="cont-barra">
+              <div class="barra" id="paint3d">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>92%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>PHOTOSHOP</span>
+            <div class="cont-barra">
+              <div class="barra" id="photoshop">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>65%</span>
+            </div>
+          </div>          
+        </div>
+
+        <div class="fila">
+          <div class="col">
+            <span>PROACTIVIDAD</span>
+            <div class="cont-barra">
+              <div class="barra" id="proactividad">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>95%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>ADAPTABILIDAD</span>
+            <div class="cont-barra">
+              <div class="barra" id="adaptabilidad">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>94%</span>
+            </div>
+          </div>          
+        </div>
+
+        
+        <div class="fila">
+          <div class="col">
+            <span>COMUNICACION ASERTIVA</span>
+            <div class="cont-barra">
+              <div class="barra" id="comunicacionasertiva">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>96%</span>
+            </div>
+          </div>
+          <div class="col">
+            <span>CAPACIDAD DE ESCUCHA</span>
+            <div class="cont-barra">
+              <div class="barra" id="capacidaddeescucha">
+                <!-- INTEGRAR JAVASCRIPT PARA BARRITAS -->
+              </div>
+              <span>97%</span>
+            </div>
+          </div>          
+        </div>
+
+  </section>
+  
+  <!-- Seccion Experiencia -->
+  <section class="experiencia" id="experiencia">
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Experiencia</h2>
+      <h3>Estudios y experiencia</h3>
+      <div class="info">
+        <div class="col">
+          <span class="titulo">Educación</span>
+
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2010 - 2012</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam porro laboriosam omnis? Molestias atque ullam corrupti at repudiandae. Aperiam.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Técnico en Diseño Web</h4>
+                <p>Universidad de San Luis</p>
+                <span class="promedio">Promedio 9.2</span>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2012 - 2013</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam porro laboriosam omnis? Molestias atque ullam corrupti at repudiandae.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Programador Front-End</h4>
+                <p>Universidad Siglo XXI</p>
+                <span class="promedio">Promedio 8.5</span>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2013 - 2015</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Especializacion en Diseño</h4>
+                <p>Cursos Web</p>
+                <span class="promedio">Promedio 9.0</span>
+              </td>
+            </tr>
+          </table>          
+        </div>
+
+        <div class="col">
+          <span class="titulo">Experiencia Laboral</span>
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2012 - 2014</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam porro laboriosam omnis? Molestias atque ullam corrupti.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Web Design</h4>
+                <p>Programador Junior</p>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2014 - 2023</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam porro laboriosam omnis?
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Despegar.com</h4>
+                <p>Programador Front-End</p>
+              </td>
+            </tr>
+          </table>          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Contacto -->
+  <section class="contacto" id="contacto">
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Contacto</h2>
+      <h3>¡Ponete en contacto!</h3>
+      <div class="fila">
+        <div class="col">
+          <h2>
+            <i class="fa-solid fa-phone"></i>Teléfono
+          </h2>
+          <span class="info-contacto">11-3344-5566</span>
+        </div>
+        <div class="col">
+          <h2>
+            <i class="fa-solid fa-envelope"></i>Correo
+          </h2>
+          <span class="info-contacto">pilar.maria.alexander@example.com</span>
+        </div>
+        <div class="col">
+          <h2>
+            <i class="fa-solid fa-globe"></i>Página Web
+          </h2>
+          <span class="info-contacto">pilarmariaalexander.com</span>
+        </div>
+      </div>
+
+      <h4>Formulario de contacto</h4>
+          <div class="formulario" id="formulario">
+            <div class="fila">
+              <div class="col">      
+                <form action="" method="get">
+                  <input name="input_nombre" type="text" placeholder="Tu nombre"/>
+                  <input name="email" type="text" placeholder="Correo electrónico"/>
+                  <input name="asunto" type="text" placeholder="Asunto"/>
+                  <textarea name="comments" cols="30" rows="12" placeholder="Escriba aquí su mensaje"></textarea>
+                  <input id="enviar" type="submit" value="Enviar"/>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+  <!-- Script de la página -->
+  <script src="js/app.js"></script>
+
 </body>
 
 <footer>
-  <h4>Sitio desarrollado por jlc</h4>
-  <br>
+  <div class="footer">
+    <div class="contenido-seccion">
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  
 </footer>
 </html>
